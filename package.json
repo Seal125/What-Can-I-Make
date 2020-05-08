@@ -1,0 +1,23 @@
+{
+  "name": "unit-8-project",
+  "version": "1.0.0",
+  "description": "## Directions Congratulations! You've made it to the end of our React unit! Now it's time to solidify and extend upon your foundational knowledge by building a small project that pushes you to bring multiple concepts together.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seal125/unit-8-project.git"
+  },
+  "author": "Stephanie Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seal125/unit-8-project/issues"
+  },
+  "homepage": "https://github.com/Seal125/unit-8-project#readme"
+}

@@ -12,11 +12,9 @@ const RecipeCollection = () => {
 	async function getRecipes() {
 		const apiInfo = await fetch('/express_backend');
 		const apiData = await apiInfo.json();
-		console.log(apiData);
 		setIsLoading(true);
-		const key = 'b2337fd1d77d48eaa35de83c018132da';
 		const response = await fetch(
-			`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${key}&ingredients=${ingredients}`
+			`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiData.key}&ingredients=${ingredients}`
 		);
 		const data = await response.json();
 		setRecipes(data);

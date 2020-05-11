@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class RecipeForm extends Component {
 	render() {
@@ -12,10 +12,6 @@ class RecipeForm extends Component {
 						List Your Ingredients!
 					</Label>
 					<Input
-						onSubmit={(e) => {
-							e.preventDefault();
-							this.props.getRecipes();
-						}}
 						className='col-lg-6 offset-3'
 						onChange={(e) => {
 							const userInput = e.target.value.split(', ').join(',+');
@@ -27,9 +23,7 @@ class RecipeForm extends Component {
 						placeholder='milk, eggs, cheese...(must have at least 2 ingredients)'
 					/>
 				</FormGroup>
-				<Input
-					color='primary'
-					type='submit'
+				<Button
 					className='col-lg-1 button'
 					color='primary'
 					onClick={(e) => {
@@ -37,7 +31,7 @@ class RecipeForm extends Component {
 						this.props.getRecipes();
 					}}>
 					Submit
-				</Input>
+				</Button>
 			</Form>
 		);
 	}

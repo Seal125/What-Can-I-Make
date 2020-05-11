@@ -28,3 +28,30 @@
 .button {
 	margin-left: 45%;
 }
+
+.header {
+	width: 100%;
+}
+
+#header-image {
+	width: 100%;
+}
+
+.header-text {
+	text-align: center;
+	margin-top: -20%;
+	color: darkblue;
+}
+
+.app-info {
+	margin-top: 20%;
+	text-align: center;
+}
+
+.info-title {
+	margin-bottom: 2%;
+}
+
+#info-text {
+	font-size: 20px;
+}

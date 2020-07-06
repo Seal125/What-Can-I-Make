@@ -13,7 +13,7 @@ function App() {
         <Navbar color='light' light expand='md'>
           <Link to='/'>
             <NavbarBrand>
-              <img id='logo' src={logo} alt='logo' />
+              <img id='logo' src={logo} alt='website logo' />
             </NavbarBrand>
           </Link>
           <Nav className='mr-auto' navbar>

@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 2000;
 
 app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'what-can-i-make', 'build')));
 
 // create a GET route
 app.get('/express_backend', (req, res) => {
@@ -13,7 +13,7 @@ app.get('/express_backend', (req, res) => {
 });
 
 app.get('/*', function (req, res) {
-	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+	res.sendFile(path.join(__dirname, 'what-can-i-make', 'build', 'index.html'));
 });
 
 // console.log that your server is up and running

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "## Directions Congratulations! You've made it to the end of our React unit! Now it's time to solidify and extend upon your foundational knowledge by building a small project that pushes you to bring multiple concepts together.",
   "main": "app.tsx",
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
